@@ -29,21 +29,18 @@ var OuterbaseTableEvent = {
 
 
 class OuterbasePluginConfig_$PLUGIN_ID {
-    // Inputs from Outerbase for us to retain
     tableValue = undefined
     count = 0
     page = 1
     offset = 50
     theme = "light"
 
-    // Inputs from the configuration screen
     imageKey = undefined
     optionalImagePrefix = undefined
     titleKey = undefined
     captionKey = undefined
     contentLinkKey = undefined
 
-    // Variables for us to hold state of user actions
     deletedRows = []
 
     constructor(object) {
