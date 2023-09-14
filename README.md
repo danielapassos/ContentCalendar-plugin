@@ -30,8 +30,17 @@ An interactive Outerbase plugin designed for content creators. Display and manag
 6. Experience a refreshed and enhanced visualization of your data in Outerbase.
 
 ## Configuration
-The plugin supports various configurations to tailor the data representation to your specific needs. Here are some of the main configuration options you can adjust:
-- **Image Key**: Specify the data column key for images to be displayed in the visual grid.
-- (Any other configuration options the plugin supports.)
 
-For detailed configuration options and guidelines, please refer to the [Configuration Guide](#configuration).
+The plugin is designed to be highly customizable to cater to various data visualization needs. Below are the primary configuration variables available:
+
+- **imageKey**: Determines which data column should be used to fetch the images displayed in the visual grid. If not specified, it defaults to `undefined`.
+  
+- **optionalImagePrefix**: This is an optional variable to prepend a static URL path to your images if they are stored with relative paths. It defaults to `undefined`.
+
+- **titleKey**: Defines the data column key that should be used to fetch titles for each grid item. If not specified, it defaults to `undefined`.
+
+- **captionKey**: Specifies which data column should be used to fetch captions or short descriptions for the visual grid. It defaults to `undefined`.
+
+- **contentLinkKey**: Determines which data column should be used to fetch the link associated with a specific grid item, useful for items that might link out to external content or detailed views. If not specified, it defaults to `undefined`.
+
+Remember to set these variables according to your Outerbase table structure to ensure the plugin works optimally and displays the desired content.
